@@ -13,7 +13,7 @@ const { series, parallel, src, dest, watch } = require('gulp'),
 
 //pug to html
 function compilePug() {
-  return src('src/index.pug')
+  return src('src/*.pug')
     .pipe(pug({
       pretty: true
     }))
@@ -26,13 +26,13 @@ function compilePug() {
 
 //scss to css
 function compileSass() {
-  return src('src/sass/**/*.scss')
+  return src(['src/sass/style.scss'])
     .pipe(sass({
       includePaths: ['src/sass'],
       outputStyle: 'compressed'
     }))
     .on('error', sass.logError)
-    .pipe(dest('dist'))
+    .pipe(dest('dist/css'))
     .pipe(browserSync.stream());
 }
 
@@ -41,7 +41,7 @@ function js() {
   return src('src/js/*.js')
     .pipe(babel())
     .pipe(minifyJs())
-    .pipe(dest('dist'))
+    .pipe(dest('dist/js'))
     .pipe(browserSync.stream());
 }
 

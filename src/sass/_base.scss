@@ -1,4 +1,10 @@
 body {
-  background-color: $bg-color;
-  color: fuchsia;
+  font-family: 'Noto Sans HK', sans-serif;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+.layout {
+  min-height: 95vh;
+
 }

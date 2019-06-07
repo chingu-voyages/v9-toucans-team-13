@@ -1,11 +1,7 @@
-doctype
-html(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title title
-    link(rel="stylesheet", href="style.css")
+extends _layouts/home
 
-  body
-    h1 Be carefull with your eyes!
+block content
+  include _partials/hero
+
+block scripts
+  scripts(src="js/index.js")

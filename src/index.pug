@@ -1,7 +1,32 @@
-extends _layouts/home
+<!DOCTYPE html>
+html(lang="en")
+  head
+    title SEBx-clone
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+HK:200,300,400,700&display=swap")
+    link(rel="shortcut icon" href="assets/favicon-sebx.ico" type="image/x-icon")
+    link(rel="stylesheet" href="css/style.css")
 
-block content
-  include _partials/hero
+  body.index
+    .layout
 
-block scripts
-  scripts(src="js/index.js")
+      include _partials/index__header
+
+      main.index__main
+        include _partials/our-values
+
+        .careers-promotion.typography
+          .reveal-words-on-scroll
+            p.reveal-words-on-scroll__paragraph
+              | Check out our open positions
+
+        include _partials/careers
+
+        .button
+          video.button__video(src="assets/button.mp4" type="video/mp4" autoplay playsinline loop muted)
+
+      include _partials/index__footer
+
+      block scripts

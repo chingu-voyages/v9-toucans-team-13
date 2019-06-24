@@ -1,0 +1,28 @@
+body {
+  font-family: 'Noto Sans HK', sans-serif;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 300;
+
+  *, *:before, *:after {
+    font: inherit;
+  }
+}
+
+.typography {
+  h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 23px;
+    line-height: 1.25;
+    margin-top: .6em;
+    margin-bottom: .6em;
+  }
+
+  p + h2 {
+    margin-top: 1.15em;
+  }
+}

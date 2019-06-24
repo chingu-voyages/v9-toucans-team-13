@@ -1,10 +1,32 @@
 body {
-  font-family: 'Noto Sans HK', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.index {
   color: $color-text;
   background-color: $color-bg;
 }
 
 .layout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   min-height: 95vh;
+  margin: 0 auto;
+}
 
+.index__main {
+  max-width: 1282px;
+  padding: 0;
+  padding-top: 100px;
+  margin: 0 auto 350px;
+}
+
+.careers-promotion {
+  margin-top: 275px;
+}
+
+careers {
+  margin-top: 275px;
 }

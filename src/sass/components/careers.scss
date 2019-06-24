@@ -1,0 +1,69 @@
+.careers {
+  margin: 0;
+  padding: 0;
+  margin-top: 275px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 16px;
+
+    .empty-item {
+      border: 1px solid #fff;
+    }
+
+    .box-pink {
+      background-color: #ff9191;
+    }
+
+    .box-yellow {
+      background-color: #f9d965;
+    }
+
+    .box {
+      height: 224px;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-size: 25px;
+        padding: 1em;
+        text-align: center;
+        color: #000;
+        font-weight: 500;
+        line-height: 1.2;
+
+        text-decoration: none;
+      }
+    }
+
+    .box1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    .box2 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    .box3 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    .box4 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+}

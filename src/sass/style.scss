@@ -16,5 +16,9 @@
 
 //Components
 @import "_base";
-@import "_text.scss";
-@import "components/hero"
+@import "components/_text";
+@import "components/index__header";
+@import "components/our-values";
+@import "components/index__footer";
+@import "components/careers";
+@import "components/button";

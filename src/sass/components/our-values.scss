@@ -7,9 +7,28 @@
   p {
     margin-left: 7.5%;
     max-width: 92.5%;
+
+    @media(min-width: 501px) {
+      margin-left: 22.5%;
+      max-width: 72.5%;
+    }
   }
 }
 
 .our-values-summary {
   margin-top: 275px;
+
+  @media(min-width: 501px) {
+    margin-top: 365px;
+  }
+
+  @media(min-width: 769px) {
+    margin-top: 400px;
+  }
+
+  p {
+    @media(min-width: 501px) {
+      max-width: 72.5%;
+    }
+  }
 }

@@ -1,9 +1,11 @@
-body {
-  margin: 0;
-  padding: 0;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 .index {
+  margin: 0;
+  padding: 0;
+
   color: $color-text;
   background-color: $color-bg;
 }
@@ -18,15 +20,19 @@ body {
 
 .index__main {
   max-width: 1282px;
-  padding: 0;
+  padding: 0 16px;
   padding-top: 100px;
   margin: 0 auto 350px;
-}
 
-.careers-promotion {
-  margin-top: 275px;
-}
+  @media(min-width: 501px) {
+    padding: 0 35px;
+    padding-top: 200px;
+    margin-bottom: 450px;
+    max-width: 1320px;
+  }
 
-careers {
-  margin-top: 275px;
+  @media(min-width: 769px) {
+    padding: 0 50px;
+    max-width: 1350px;
+  }
 }

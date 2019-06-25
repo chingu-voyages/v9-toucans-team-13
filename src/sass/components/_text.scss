@@ -9,10 +9,23 @@ body {
   }
 }
 
+.about {
+  line-height: 1.25;
+}
+
 .typography {
   h2 {
     font-size: 25px;
+    font-weight: 400;
     text-transform: uppercase;
+
+    @media(min-width: 501px) {
+      font-size: 37px;
+    }
+
+    @media(min-width: 769px) {
+      font-size: 50px;
+    }
   }
 
   p {
@@ -20,6 +33,14 @@ body {
     line-height: 1.25;
     margin-top: .6em;
     margin-bottom: .6em;
+
+    @media(min-width: 501px) {
+      font-size: 32px;
+    }
+
+    @media(min-width: 769px) {
+      font-size: 45px;
+    }
   }
 
   p + h2 {

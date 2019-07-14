@@ -6,6 +6,7 @@
       a(href='privacy.html')  Privacy Policy
 script(src='https://unpkg.com/aos@next/dist/aos.js')
 script.
+  var users = !{JSON.stringify(users).replace(/<\//g, "<\\/")}
   AOS.init();
   // You can also pass an optional settings object
   // below listed default settings

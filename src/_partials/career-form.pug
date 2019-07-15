@@ -1,0 +1,65 @@
+.career-form.career__form
+  .career-form__body.grid
+    .grid-row
+      .grid-col-8.grid-push-2
+        .linkedin-button.linkedin-button--pink
+          button.linkedin-button__button
+            span.linkedin-button__button-pre-fetch-label Make my life easier. Get my LinkedIn info.
+            span.linkedin-button__button-post-fetch-label Done!
+          .linkedin-button__icon-container
+            img(src="#" role="presentation" alt="").linkedin-button__thumbs-up
+            svg(width="22" height="28" fill="none" xmlns="http://www.w3.org/2000/svg").linkedin-button__arrow
+              path(d="M11 0v26M1 16.5l10 10 10-10" stroke="#000" stroke-width="2")
+    .career-form__field.grid-row
+      label(for="fullName").career-form__field-label.grid-col-12.grid-col-l-2 Full name*
+      .career-form__field-input-wrapper.grid-col-12.grid-col-l-8
+        input(id="fullName" type="text").career-form__field-input.input.input--text
+    .career-form__field.grid-row
+      label(for="emailAddress").career-form__field-label.grid-col-12.grid-col-l-2 Email*
+      .career-form__field-input-wrapper.grid-col-12.grid-col-l-8
+        input(id="emailAdress" type="text").career-form__field-input.input.input--text
+    .career-form__field.grid-row
+      label(for="phoneNumber").career-form__field-label.grid-col-12.grid-col-l-2 Phone number*
+      .career-form__field-input-wrapper.grid-col-12.grid-col-l-8
+        input(id="phoneNumber" type="text").career-form__field-input.input.input--text
+    .career-form__field.grid-row
+      label(for="linkedInLink").career-form__field-label.grid-col-12.grid-col-l-2 LinkedIn link
+      .career-form__field-input-wrapper.grid-col-12.grid-col-l-8
+        input(id="linkedInLink" type="text").career-form__field-input.input.input--text
+    .career-form__field.grid-row
+      label(for="cvFile").career-form__field-input.input.input--text CV
+      .input-file.career-form__field-input-wrapper.grid-col-12.grid-col-l-8
+        label(for="cvFile").input-file__label.career-form__field-label-file
+          span Select
+        input(id="cvFile" type="file").career-form__field-input.input.input--file
+    .career-form__field.grid-row
+      label(for="coverLetterFile").career-form__field-input.input.input--text Cover Letter
+      .input-file.career-form__field-input-wrapper.grid-col-12.grid-col-l-8
+        label(for="coverLetterFile").input-file__label.career-form__field-label-file
+          span Select
+        input(id="coverLetterFile" type="file").career-form__field-input.input.input--file
+    .career-form__field.grid-row
+      label(for="spontaneousMessage").career-form__field-label.grid-col-12.grid-col-l-2 Spontaneous message
+      .career-form__field-input-wrapper.grid-col-12.grid-col-l-8
+        textarea(id="spontaneousMessage" rows="10").career-form__field-input.input.input--textarea
+    .career-form__field.grid-row
+      label(for="linkToWebsite").career-form__field-label.grid-col-12.grid-col-l-2 Link to website
+      .career-form__field-input-wrapper.grid-col-12.grid-col-l-8
+        input(id="linkToWebsite" type="text").career-form__field-input.input.input--text
+    .career-form__field.career-form__field--checkbox.grid-row
+      input(id="agreeToPrivacyPolicy" type="checkbox" value="on").input.input--checkbox
+      .input-checkbox__checkbox-representation
+        svg(width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg")
+          path(d="M17.5 1L1 17.5M17.5 17.5L1 1" stroke="#000" stroke-width="2")
+      .input-checkbox__label
+        | I agree to the
+        a(hrev="#") following privacy policy
+  .career-form__submit
+    a.button.career-form__submit-button
+      video(autoplay playsinline loop muted src="assets/button.mp4").button__video
+      .button__label.button__label--has-validation-error
+        svg(width="22" height="29" fill="none" xmlns="http://www.w3.org/2000/svg")
+          path(d="M11 28.5v-26M21 12L11 2 1 12" stroke="#fff" stroke-width="2")
+        | Woops! Something is missing.
+      .button__label Submit application
+  

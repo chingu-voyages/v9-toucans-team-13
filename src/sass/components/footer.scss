@@ -1,0 +1,241 @@
+.footer {
+  max-width: 1348px;
+  padding-left: 34px;
+  padding-right: 34px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 750px) {
+    padding-left:18px;
+    padding-right:18px;
+  }
+}
+
+.footer__manifest-video {
+  margin: auto;
+  margin-top: 555px;
+  margin-bottom: 387px;
+
+  @media (max-width: 750px) {
+    margin-top: 433px;
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 242px;
+    margin-top: 220px
+  }
+}
+
+.footer__sign-up-container {
+  position: relative;
+  font-size:30px;
+  line-height:45px;
+
+  @media (max-width: 600px) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.footer__sign-up-container input {
+  font-size: 30px;
+  line-height: 45px;
+
+  @media (max-width: 600px) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  @media (max-width: 360px) {
+    padding: 18px;
+    font-size: 18px
+  }
+}
+
+.footer__sign-up-container form {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center
+}
+
+.footer__sign-up-email-input-black,
+.footer__sign-up-email-input-white {
+  flex: 1;
+  padding: 26px 27px 22px;
+
+  @media (max-width:600px) {
+    padding:25px 27px 23px;
+  }
+}
+
+.footer__sign-up-email-input-white {
+  border: 2.5px solid #fff;
+  color: #fff;
+}
+
+.footer__sign-up-email-input-black {
+  border: 2.5px solid #000;
+  color: #000;
+}
+
+.footer__sign-up-email-placeholder-black,
+.footer__sign-up-email-placeholder-white {
+  padding: 29px 27px 19px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  animation: animateText 2.5s linear infinite alternate;
+
+  @media (max-width: 600px) {
+    padding: 30px 27px 18px;
+  }
+
+  @media (max-width: 360px) {
+    padding: 18px;
+    padding-top: 21px;
+    font-size: 18px;
+  }
+}
+
+.footer__sign-up-email-placeholder-white {
+  color:#fff;
+}
+
+.footer__sign-up-email-placeholder-black {
+  color:#000;
+}
+
+.footer__sign-up-email-placeholder-second {
+  opacity: 0;
+  animation-delay: 2.5s;
+}
+
+@keyframes animateText {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1
+  }
+}
+
+.footer__links {
+  display: flex;
+  margin-top: 191px;
+  align-items: center;
+  width: 610px;
+  float: left;
+
+  @media (max-width: 1135px) {
+    flex-direction:column;
+    align-items:flex-start;
+    margin-top:320px;
+    width:322px;
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 168px;
+    width: 100%;
+  }
+
+  a {
+    font-size: 30px;
+    margin-right: 50px;
+
+    @media (max-width:1135px) {
+      font-size: 24px;
+    }
+    @media (max-width: 600px) {
+      font-size: 20px;
+      margin-right: 25px;;
+    }
+  }
+
+  a:last-child {
+    margin-right: 0;;
+  }
+}
+
+.footer__copyright-container {
+  margin-top: 191px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  width: 210px;
+  float:right;
+
+  @media (max-width:1135px) {
+    font-size:18px;
+    line-height:25px;
+    margin-top:320px;
+  }
+
+  @media (max-width:600px) {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+    line-height:22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__privacy-policy-black,
+  .footer__privacy-policy-white {
+    width: 160px;
+  }
+}
+
+.footer__initiated-text {
+  width: 100%;
+  height: 89px;
+  font-size: 30px;
+
+  @media (max-width: 1135px) {
+    font-size: 25px;
+    height: 49px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+    color: #000;
+    width: 115px;
+  }
+}
+
+.footer__privacy-policy-black {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.footer__privacy-policy-white {
+  color: hsla(0, 0%, 100%, 0.3)
+}
+
+.footer__links-spacer {
+  width: 192px;
+  height: 32px;
+
+  @media (max-width: 1135px) {
+    width: 184px;
+    height: 25px;
+    margin-bottom: 36px;
+  }
+
+  @media (max-width: 600px) {
+    width: 50px;
+    height: 18px;
+    margin-bottom: 36px;
+  }
+}

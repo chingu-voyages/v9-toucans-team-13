@@ -7,7 +7,7 @@
   }
 }
 
-.index__header {
+.about__hero-video {
   position: relative;
   display: flex;
   width: 100vw;
@@ -24,7 +24,7 @@
   z-index: 1;
 }
 
-.about {
+.welcome {
   position: absolute;
   left: 16px;
   bottom: 16vh;
@@ -33,9 +33,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  // width: calc(100% + 16px);
-  // margin-left: -8px;
-  // margin-right: -8px;
 
   margin: 0 auto;
   padding: 0;
@@ -57,7 +54,7 @@
   }
 }
 
-.about__title {
+.welcome__title {
   margin: 0;
   margin-bottom: 35px;
   flex-basis: 100%;
@@ -83,7 +80,7 @@
   animation-play-state: running;
 }
 
-.about__description {
+.welcome__description {
   flex-basis: 100%;
   max-width: 330px;
 

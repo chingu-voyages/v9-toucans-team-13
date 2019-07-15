@@ -1,0 +1,50 @@
+.about__body {
+  max-width: 1348px;
+  padding-left: 34px;
+  padding-right: 34px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 600px;
+  position:relative;
+
+  @media (max-width: 1135px) {
+    padding-top: 500px;
+  }
+
+  @media (max-width: 750px) {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top:400px;
+  }
+}
+
+.about__career-button-rotating-container {
+  margin-left: auto;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.about__career-button-rotating {
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  display: inline-block;
+  font-size: 45px;
+
+  @media (max-width:750px) {
+    font-size: 32px;
+  }
+
+  @keyframes spin {
+    0% {
+      transform:rotate(0deg)
+    }
+    to {
+      transform:rotate(1turn)
+    }
+  }
+}

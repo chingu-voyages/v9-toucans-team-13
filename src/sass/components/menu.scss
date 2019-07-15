@@ -1,0 +1,71 @@
+.menu__container {
+  max-width: 1350px;
+  padding: 0 35px;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  z-index: 1;
+  font-size: 40px;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 120px;
+}
+
+.menu__content-container {
+  display: flex;
+}
+
+.menu__cross {
+  margin-left: 33px;
+  width: 32px;
+  height: 32px;
+  opacity: 0;
+}
+
+.menu__black {
+  color: #000
+}
+
+.menu__white {
+  color: #fff
+}
+
+.menu__container-closed {
+  height: 160px;
+  background-color:transparent;
+}
+
+.menu__container-open {
+  height: 100%;
+  background-color: #000;
+  animation-name: fadeIn;
+  animation-duration: .3s;
+  flex-direction: row;
+}
+
+.menu__square {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  flex-shrink: 0;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.menu__current-page {
+  margin-left: 32px;
+  margin-top: -2px;
+}
+
+.menu__open-content-container {
+  display: flex;
+}
+
+.menu__navigation-items {
+  margin-top: -19px;
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+  line-height: 80px;
+}

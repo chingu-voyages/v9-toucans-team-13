@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 html(lang="en")
   head
-    title SEBx(clone) - About
+    title SEBx(clone) - Careers
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
@@ -11,13 +11,9 @@ html(lang="en")
 
   body.theme--black
     .layout
-      main.page.about
-        include _partials/hero-video
-        .about__body
-          include _partials/our-values
-          a(href="careers.html").about__career-button-rotating-container
-            .about__career-button-rotating Career Page
-
+      main.page.careers
+        include _partials/menu
+        .careers__body
+          video.careers__makers-video(src="assets/makers.mp4" type="video/mp4" autoplay playsinline muted)
+          include _partials/careers-grid
         include _partials/footer
-
-      block scripts

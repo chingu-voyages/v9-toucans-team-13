@@ -2,23 +2,22 @@
 @import "_mixins";
 @import "_placeholders";
 
-//Bootstrap
-
-// @import "node_modules/bootstrap/scss/functions";
-// @import "node_modules/bootstrap/scss/variables";
-// @import "node_modules/bootstrap/scss/mixins";
-// @import "node_modules/bootstrap/scss/reboot";
-
-// @import "node_modules/bootstrap/scss/grid";
-// @import "node_modules/bootstrap/scss/utilities/flex";
-// @import "node_modules/bootstrap/scss/utilities/float";
-// @import "node_modules/bootstrap/scss/utilities/clearfix";
-
 //Components
 @import "_base";
+@import "theme";
+@import "normalize";
+@import "components/layout";
 @import "components/_text";
-@import "components/index__header";
-@import "components/our-values";
-@import "components/index__footer";
-@import "components/careers";
+@import "components/about";
+@import "components/career";
+@import "components/career-form";
+@import "components/menu";
 @import "components/button";
+@import "components/hero-video";
+@import "components/our-values";
+@import "components/footer";
+@import "components/manifest-video";
+@import "components/careers";
+@import "components/careers-grid";
+@import "components/grid";
+@import "components/reveal-words-on-scroll";

@@ -1,0 +1,75 @@
+.career {
+  padding: 65px 0 0;
+  min-height: 100vh;
+
+  @media (min-width: 769px) {
+    padding: 95px 0 0;
+  }
+}
+
+.career__body {
+  max-width: 1350px;
+  padding: 0 35px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+  line-height: 1.15;
+
+  @media (min-width: 501px) {
+    font-size:32px
+  }
+
+  @media (min-width: 769px) {
+    font-size:40px
+  }
+}
+
+.career__summary {
+  margin-top: 100px;
+
+  p, ul {
+    margin: 1.25em 0;
+  }
+
+  h1, h2, h3, h4, h5, strong {
+    font-size: inherit;
+    text-decoration: underline;
+  }
+
+  strong {
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  h1+p, h2+p, h3+p, h4+p, h5+p {
+    margin-top: .2em;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: .25em;
+    }
+
+    li:before {
+      content: "\2013";
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: 501px) {
+    margin-top: 150px;
+  }
+
+  @media (min-width: 769px) {
+    margin-top: 30vh;
+  }
+}
+
+.career__summary>div {
+  max-width: 850px;
+}

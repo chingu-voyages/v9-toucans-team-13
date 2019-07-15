@@ -26,8 +26,9 @@
 
 .welcome {
   position: absolute;
-  left: 16px;
-  bottom: 16vh;
+  left: 300px;
+  bottom:12.5vh;
+  padding-right: 50px;
   z-index: 2;
 
   display: flex;
@@ -35,7 +36,7 @@
   flex-wrap: wrap;
 
   margin: 0 auto;
-  padding: 0;
+  padding: 0 15%;
   padding-right: 16px;
   width: 100%;
 

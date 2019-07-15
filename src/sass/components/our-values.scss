@@ -43,3 +43,20 @@
     }
   }
 }
+
+
+.our-values.typography {
+    margin-top: 20vh;
+}
+
+
+
+.reveal-words-on-scroll .reveal-words-on-scroll__paragraph span {
+display: inline-block;
+transition: all .4s ease;
+opacity: 0;
+transform: translate3d(5px,0,0);
+margin-left: .2em;
+margin-bottom: .25em;
+overflow: visible;
+}
